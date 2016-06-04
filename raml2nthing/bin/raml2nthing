@@ -5,7 +5,7 @@ import argparse
 from raml2nthing import convert
 
 
-parser = argparse.ArgumentParser(description='A tool to convert RAML to anything')
+parser = argparse.ArgumentParser(description='A tool for converting RAML to anything')
 parser.add_argument(
     '--input',
     '-i',

@@ -25,7 +25,7 @@ def install_requires():
 setup(
     name='raml2nthing',
     version='0.1.0',
-    description='A tool to convert RAML to anything',
+    description='A tool for converting RAML to anything',
     long_description='',
     url='',
     license='Apache 2.0',
