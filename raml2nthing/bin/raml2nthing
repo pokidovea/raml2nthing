@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+
+import argparse
+
+from raml2nthing import convert
+
+
+parser = argparse.ArgumentParser(description='A tool to convert RAML to anything')
+parser.add_argument(
+    '--input',
+    '-i',
+    action='store',
+    dest='source',
+    help='Source RAML file'
+)
+parser.add_argument(
+    '--template',
+    '-t',
+    action='store',
+    dest='template',
+    help='A Jinja2 template file or predefined template, e.g. markdown'
+)
+parser.add_argument(
+    '--output',
+    '-o',
+    action='store',
+    dest='destination',
+    help='Destination file'
+)
+
+
+if __name__ == '__main__':
+    args = parser.parse_args()
+    convert(args.source, args.template, args.destination)

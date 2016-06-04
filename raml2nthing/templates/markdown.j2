@@ -1,0 +1,10 @@
+# {{ api.title }} documentation{% if api.version %} version {{ api.version }}{% endif %}
+{{ api.base_uri }}
+
+---
+
+{% for resource in api.resources %}
+## {% if resource.display_name %}{{ resource.display_name }}{% else %}{{ resource.path }}{% endif %}
+{{ resource.description }}
+
+{% endfor %}
