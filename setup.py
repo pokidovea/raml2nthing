@@ -33,6 +33,7 @@ setup(
     author_email='pokidovea@gmail.com',
     keywords=['raml', 'converter'],
     packages=find_packages(exclude=EXCLUDE_FROM_PACKAGES),
+    package_data={'': ['templates/*']},
     scripts=['raml2nthing/bin/raml2nthing'],
     classifiers=[
         'Development Status :: 4 - Beta',
